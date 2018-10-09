@@ -1,0 +1,52 @@
+header .firstNav {
+  height: 19px;
+  margin: 0 2%;
+}
+header .firstNav nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .firstNav nav a {
+  text-decoration: none;
+  margin-right: 3%;
+  color: #755330;
+  font-size: 0.8rem;
+}
+header .secondNav {
+  background-color: #755330;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .secondNav nav a {
+  text-decoration: none;
+  padding: 35px;
+  font-size: 2rem;
+  color: #DBA72E;
+}
+main .AdOne {
+  margin: 2%;
+  height: 250px;
+  background-color: #DBA72E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .AdOne img {
+  width: 100%;
+}
+main .AdOne h3 {
+  font-size: 2rem;
+  color: #755330;
+}
+main .fourRows {
+  display: flex;
+  flex-wrap: wrap;
+  background: green;
+}
+main .fourRows img {
+  width: 100%;
+  height: auto;
+  max-width: 25%;
+}
