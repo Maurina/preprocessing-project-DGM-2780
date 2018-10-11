@@ -1,0 +1,136 @@
+// variables
+@DkColor:  #2b2d2f;
+@LtColor: #E83337;
+@LtAccent: #DBA72E;
+@DkAccent: #997C67;
+@tablet: ~"(max-width: 800px)";
+@mobile: ~"(max-width: 500px)";
+@fontStack: @primaryFont;
+@primaryFont:'Lora', serif;
+
+// mixins
+.customLayout(@layout){
+  display: flex;
+  justify-content: @layout
+}
+
+.customAlignment(@alignment){
+  display:flex;
+  align-content: @alignment;
+}
+
+header{
+  
+    .firstNav{
+      height: 19px;
+      margin: 0 2%;
+  
+      nav{
+        .customLayout(flex-end);
+     
+        a{
+          text-decoration: none;
+          margin-right: 3%;
+          color: @DkColor;
+          font-size: .8rem;
+          font-family: @fontStack;
+        
+        }//end a
+      }//end nav
+    }//end firstNav
+  
+  .secondNav{
+    .customLayout(flex-start);
+    .customAlignment(center);
+    background-color:@DkColor;
+    height: 75px;
+  
+  
+    nav{
+    
+      
+      a{
+      
+        text-decoration: none;
+        padding: 35px;
+        font-size: 2rem;
+        color:@LtAccent;
+      }
+    }//end nav
+  }//end secondNav
+}//end header
+
+main{
+  .AdOne{
+    .customAlignment(center);
+    margin: 2%;
+    height: 250px;
+    background-color: @LtAccent;
+    display:flex;
+   flex-direction: column;
+
+    
+    img{
+      width:
+      padding-bottom: 23px;
+    }//end img
+    
+    h3{
+      font-size: 2rem;
+      color:@LtColor;
+     
+      bottom: 200px;
+    }
+
+  }//end AdOne
+  
+  .fourRows{
+    .customLayout(center);
+
+    flex-wrap: wrap;
+
+   
+    img{
+      width: 100%;
+      height: auto;
+      max-width: 25%;
+      margin: 1%;
+    }// end img
+  }//end fourRows
+  
+
+  .bottomNav{
+    .customLayout(space-evenly);
+  
+    .customAlignment(baseline);
+ 
+   background-color: @DkColor;
+    height: auto;
+ 
+
+     a{
+       margin: 2%;
+       .customLayout(flex-start);
+        font-family: @fontStack;
+        text-decoration: none;
+        padding: 3%;
+        font-size: 1rem;
+        color:@LtAccent;
+      
+      }
+
+      input{
+        font-size: 1rem;
+        padding: 2px;
+        background-color: #fff;
+        color: @DkAccent;
+        margin: 70px;
+        width: 300px;
+      }
+  }
+
+}//end main
+
+footer{
+
+}
