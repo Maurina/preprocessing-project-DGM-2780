@@ -1,0 +1,20 @@
+// variables
+@DkColor:  #2b2d2f;
+@LtColor: #E83337;
+@LtAccent: #DBA72E;
+@DkAccent: #997C67;
+@tablet: ~"(max-width: 800px)";
+@mobile: ~"(max-width: 500px)";
+@fontStack: @primaryFont;
+@primaryFont:'Lora', serif;
+
+// mixins
+.customLayout(@layout){
+    display: flex;
+    justify-content: @layout
+  }
+  
+  .customAlignment(@alignment){
+    display:flex;
+    align-content: @alignment;
+  }
