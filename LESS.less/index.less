@@ -4,9 +4,19 @@
 @import "generalStyles.less";
 @import "nav.less";
 @import "home.less";
+@import "bestSeller.less";
 
 
+// mixins
+.customLayout(@layout){
+  display: flex;
+  justify-content: @layout
+}
 
+.customAlignment(@alignment){
+  display:flex;
+  align-content: @alignment;
+}
 
 
  

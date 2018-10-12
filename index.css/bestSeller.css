@@ -1,0 +1,12 @@
+main .best {
+  background: yellow;
+  height: 5000px;
+}
+main .best .sideBar {
+  width: 15%;
+  background: green;
+}
+main .best .mainContent {
+  width: 85%;
+  background: blue;
+}

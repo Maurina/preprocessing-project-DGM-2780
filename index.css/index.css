@@ -132,90 +132,213 @@ table {
 html {
   font-size: 62.5%;
 }
-.container {
-  max-width: 600px;
+.home .best {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.AdOne {
+  align-content: center;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.AdOne img {
+  width: 100%;
+  padding-bottom: 23px;
+}
+.AdOne h3 {
+  font-size: 2rem;
+  color: #eee;
+}
+header {
+  max-width: 1350px;
   margin: 0 auto;
 }
 header .firstNav {
-  height: 19px;
   margin: 0 2%;
+}
+@media (max-width: 500px) {
+  header .firstNav {
+    display: none;
+  }
 }
 header .firstNav nav {
   display: flex;
   justify-content: flex-end;
+  padding: 1%;
 }
 header .firstNav nav a {
   text-decoration: none;
   margin-right: 3%;
   color: #2b2d2f;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-family: 'Lora', serif;
+}
+header .firstNav nav a:hover {
+  color: #DBA72E;
 }
 header .secondNav {
   justify-content: flex-start;
   display: flex;
   align-content: center;
   background-color: #2b2d2f;
-  height: 75px;
+}
+header .secondNav nav {
+  margin: 15px;
 }
 header .secondNav nav a {
   text-decoration: none;
-  padding: 35px;
+  margin: 35px;
   font-size: 2rem;
   color: #DBA72E;
 }
-main .AdOne {
-  align-content: center;
-  margin: 2%;
-  height: 250px;
-  background-color: #DBA72E;
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  header .secondNav nav a {
+    margin: 10px;
+  }
 }
-main .AdOne img {
-  width: 100%;
-  padding-bottom: 23px;
+header .secondNav nav a:hover {
+  color: #eee;
 }
-main .AdOne h3 {
-  font-size: 2rem;
-  color: #E83337;
-  bottom: 200px;
-}
-main .fourRows {
-  display: flex;
-  justify-content: center;
-  padding-top: 180px;
-  flex-wrap: wrap;
-  height: auto;
-}
-main .fourRows img {
-  width: 100%;
-  height: auto;
-  max-width: 25%;
-  margin: 1%;
-}
-main .bottomNav {
+.bottomNav {
   justify-content: space-evenly;
   display: flex;
-  align-content: baseline;
-  background-color: #2b2d2f;
-  height: auto;
+  align-content: center;
+  margin: 1%;
+  background-image: url(../Images/BookText.jpeg);
+  padding: 2%;
 }
-main .bottomNav a {
-  margin: 2%;
+.bottomNav a {
+  font-weight: bold;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   font-family: 'Lora', serif;
   text-decoration: none;
-  padding: 3%;
-  font-size: 1rem;
-  color: #DBA72E;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #2b2d2f;
 }
-main .bottomNav input {
+.bottomNav a:hover {
+  color: #eee;
+}
+.bottomNav .centerBox {
+  align-self: center;
+}
+.bottomNav .centerBox .btn {
+  width: 200px;
+  height: 30px;
+  background: #2b2d2f;
+  font-size: 1.5rem;
+  color: #eee;
+  border-radius: 20px;
+}
+.bottomNav .rightBox {
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .bottomNav .rightBox {
+    display: none;
+  }
+}
+.bottomNav .rightBox input {
   font-size: 1rem;
-  padding: 2px;
+  padding: 2%;
   background-color: #fff;
-  color: #997C67;
-  margin: 70px;
-  width: 300px;
+  color: #000222;
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+}
+footer {
+  font-size: 1.5rem;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+main .home .fourRows {
+  display: flex;
+  justify-content: center;
+  margin: 0 3.5%;
+  flex-wrap: wrap;
+}
+main .home .fourRows img {
+  width: 100%;
+  padding: 3% 0.5% 3% 0.5%;
+  max-width: 33.33%;
+}
+@media (max-width: 500px) {
+  main .home .fourRows img {
+    max-width: 100%;
+  }
+}
+main .best {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  main .best {
+    width: 100%;
+    margin: 0;
+  }
+}
+main .best .sideBar {
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  main .best .sideBar {
+    display: none;
+  }
+}
+main .best .sideBar h2 {
+  font-size: 2.5rem;
+  color: #2b2d2f;
+  font-weight: bold;
+  padding: 1rem;
+}
+main .best .sideBar a {
+  text-decoration: none;
+  font-size: 1.85rem;
+  color: #2b2d2f;
+  padding: 4%;
+}
+main .best .mainContent {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  main .best .mainContent {
+    width: 100%;
+  }
+}
+main .best .mainContent .container {
+  text-align: center;
+  color: #eee;
+  width: 24%;
+  margin: 0.5%;
+}
+@media (max-width: 500px) {
+  main .best .mainContent .container {
+    width: 100%;
+  }
+}
+main .best .mainContent .container img {
+  width: 100%;
+}
+main .best .mainContent .container .centered p {
+  font-size: 1.5rem;
+  color: #2b2d2f;
+  padding: 1.5%;
+}
+main .best .mainContent .container .centered .btn2 {
+  margin: 1.5%;
+  width: 150px;
+  height: 30px;
+  background: #2b2d2f;
+  font-size: 1.5rem;
+  color: #eee;
+  border-radius: 20px;
 }

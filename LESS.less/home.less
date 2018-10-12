@@ -1,39 +1,26 @@
-main .home{
-    .AdOne{
-      .customAlignment(center);
-      margin: 2%;
-      height: 250px;
-      background-color: @LtAccent;
-      display:flex;
-     flex-direction: column;
-  
+main {
+    .home{
+
       
-      img{
-        width:100%;
-        padding-bottom: 23px;
-      }//end img
-      
-      h3{
-        font-size: 2rem;
-        color:@LtColor;
-       
-    
-      }
-  
-    }//end AdOne
     
     .fourRows{
+
       .customLayout(center);
-      padding-top: 10px;
+      margin: 0 3.5%;
       flex-wrap: wrap;
-      height: auto;
-      background-color: orange;
+
+
      
       img{
         width: 100%;
-        height: auto;
-        max-width: 25%;
-        margin: 1%;
+     padding: 3% .5% 3% .5%;
+   
+        max-width: 33.33%;
+        @media @mobile{
+            max-width: 100%;
+        }
+
       }// end img
     }//end fourRows
+}//end home
 }//end main  
